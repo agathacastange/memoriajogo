@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>Jogo da Memória</h1>
+    <button onclick="iniciarJogo('solo')">Modo Solo</button>
+    <button onclick="iniciarJogo('dupla')">Modo Dupla</button>
+  </div>
+
+  <div id="jogo" class="escondido">
+    <h2 id="modo"></h2>
+    <div id="tabuleiro"></div>
+    <div id="info">
+      <p id="erros">Erros: 0</p>
+      <p id="temporizador">Tempo: 00:00</p>
+    </div>
+    <button onclick="reiniciarJogo()">Reiniciar Jogo</button>
+  </div>
+
+  <div id="vitoria" class="escondido">
+    <h2 id="mensagemVitoria"></h2>
+    <button onclick="voltarMenu()">Voltar ao Menu</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

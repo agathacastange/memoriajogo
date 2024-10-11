@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+  }
+  
+  #menu, #jogo, #vitoria {
+    margin-top: 20px;
+  }
+  
+  #tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .carta {
+    width: 100px;
+    height: 100px;
+    background-color: #e768fb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .carta.virada {
+    background-color: #87199a;
+  }
+  
+  .escondido {
+    display: none;
+  }
+  button{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #e768fb;
+  }
+  button:hover{
+    background-color: #9f32af;
+  }
+
+  
